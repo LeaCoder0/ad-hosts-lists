@@ -1,6 +1,6 @@
 # JioHotstar / Hotstar Ad & Tracking Block List
 # Format: standard hosts file (0.0.0.0 domain)
-# Last updated: 2026-03-23
+# Last updated: 2026-03-23 (rev 2)
 #
 # Sources:
 #   - AdGuard DNS Filter issue #1741
@@ -34,6 +34,17 @@
 
 # Telemetry / Logging
 0.0.0.0 logs.hotstar.com
+
+# Hotstar Ad Dashboard CDN (confirmed ad delivery)
+0.0.0.0 staragdash.akamaized.net
+
+# Ad Attribution & Targeting
+0.0.0.0 ed4abf.launches.appsflyersdk.com
+0.0.0.0 shifu.hotstarext.com
+0.0.0.0 brand-img1.hotstarext.com
+
+# Third-party Telemetry SDKs
+0.0.0.0 api.bitdrift.io
 
 # ── DO NOT BLOCK (breaks the app) ───────────────────────────────────────────
 # [SKIP] api.hotstar.com          — core API, blocks all content
