@@ -1,0 +1,49 @@
+# JioHotstar / Hotstar Ad & Tracking Block List
+# Format: standard hosts file (0.0.0.0 domain)
+# Last updated: 2026-03-23
+#
+# Sources:
+#   - AdGuard DNS Filter issue #1741
+#   - StevenBlack/hosts issue #2277
+#   - Pi-Hole Hotstar Ads blacklist (11ishan)
+#   - Community research
+#
+# Usage:
+#   AdAway → Hosts Sources → Add → paste the raw URL of this file
+#   OR manually add each domain to your block list
+#
+# NOTE: Domains marked [SKIP] are known to break the app if blocked.
+#       Do NOT add those.
+# ────────────────────────────────────────────────────────────────────────────
+
+# Video Ad Servers
+0.0.0.0 videoads.hotstar.com
+0.0.0.0 vs.hotstar.com
+
+# Hotstar Ad CDN (Akamai)
+0.0.0.0 hesads.akamaized.net
+
+# Analytics & Fingerprinting
+0.0.0.0 fp-analytics.hotstar.com
+0.0.0.0 hb-analytics.hotstar.com
+0.0.0.0 settings-analytics.hotstar.com
+0.0.0.0 events-analytics.hotstar.com
+
+# Third-party Ad Measurement
+0.0.0.0 cws-hotstar.conviva.com
+
+# Telemetry / Logging
+0.0.0.0 logs.hotstar.com
+
+# ── DO NOT BLOCK (breaks the app) ───────────────────────────────────────────
+# [SKIP] api.hotstar.com          — core API, blocks all content
+# [SKIP] service.hotstar.com      — service discovery
+# [SKIP] services.hotstar.com     — service discovery
+# [SKIP] bifrost-api.hotstar.com  — internal feature API
+# [SKIP] agl-intl.hotstar.com     — CDN routing
+# [SKIP] brands.hotstar.com       — content browsing
+# [SKIP] hses.akamaized.net       — video content CDN
+# [SKIP] hses2.akamaized.net      — video content CDN
+# [SKIP] hses3.akamaized.net      — video content CDN
+# [SKIP] hses4.akamaized.net      — video content CDN
+# [SKIP] hsprepack.akamaized.net  — app preloading CDN

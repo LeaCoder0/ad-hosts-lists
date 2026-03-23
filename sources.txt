@@ -1,0 +1,49 @@
+# Ad-blocking hosts sources
+# Format: URL | Label | Category
+# Add any of these URLs in AdAway → Hosts Sources
+
+# ── Core / General ──────────────────────────────────────────────────────────
+
+https://adaway.org/hosts.txt | AdAway Official | General
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts | StevenBlack Unified (Ads + Malware) | General
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext | Peter Lowe Blocklist | General
+https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt | GoodbyeAds | General
+
+# ── Tracking & Privacy ───────────────────────────────────────────────────────
+
+https://raw.githubusercontent.com/nicholasb2101/PiHole/master/Blocklists/Recommended%20Blocklists.txt | Nicholas B PiHole Recommended | Privacy
+https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt | anudeepND Adservers | Privacy
+https://raw.githubusercontent.com/anudeepND/blacklist/master/CoinMiner.txt | anudeepND CoinMiner | Privacy
+https://raw.githubusercontent.com/lightswitch05/hosts/master/docs/lists/ads-and-tracking-extended.txt | Lightswitch05 Ads & Tracking Extended | Privacy
+https://raw.githubusercontent.com/lightswitch05/hosts/master/docs/lists/tracking-aggressive-extended.txt | Lightswitch05 Aggressive Tracking | Privacy
+
+# ── Malware / Ransomware ─────────────────────────────────────────────────────
+
+https://raw.githubusercontent.com/StevenBlack/hosts/master/extensions/fakenews/hosts | StevenBlack Fake News Extension | Malware
+https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Ransom.txt | GoodbyeAds Ransomware Extension | Malware
+https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-YouTube-Adblock.txt | GoodbyeAds YouTube Extension | Malware
+
+# ── Indian OTT / Apps ────────────────────────────────────────────────────────
+
+# JioHotstar, Jio, regional Indian ad domains
+# → See jiohotstar-ads.hosts in this directory
+
+# ── StevenBlack Variants (choose one) ───────────────────────────────────────
+
+# Ads + Malware (base, recommended)
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+
+# Ads + Malware + Gambling
+https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts
+
+# Ads + Malware + Social
+https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social/hosts
+
+# Ads + Malware + Gambling + Social
+https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-social/hosts
+
+# Ads + Malware + Porn
+https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts
+
+# Ads + Malware + Gambling + Porn + Social (most aggressive)
+https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-social/hosts
