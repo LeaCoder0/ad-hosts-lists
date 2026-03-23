@@ -1,6 +1,6 @@
 # JioHotstar / Hotstar Ad & Tracking Block List
 # Format: standard hosts file (0.0.0.0 domain)
-# Last updated: 2026-03-23 (rev 2)
+# Last updated: 2026-03-23 (rev 3)
 #
 # Sources:
 #   - AdGuard DNS Filter issue #1741
@@ -35,9 +35,6 @@
 # Telemetry / Logging
 0.0.0.0 logs.hotstar.com
 
-# Hotstar Ad Dashboard CDN (confirmed ad delivery)
-0.0.0.0 staragdash.akamaized.net
-
 # Ad Attribution & Targeting
 0.0.0.0 ed4abf.launches.appsflyersdk.com
 0.0.0.0 shifu.hotstarext.com
@@ -58,3 +55,4 @@
 # [SKIP] hses3.akamaized.net      — video content CDN
 # [SKIP] hses4.akamaized.net      — video content CDN
 # [SKIP] hsprepack.akamaized.net  — app preloading CDN
+# [SKIP] staragdash.akamaized.net — MPEG-DASH video stream CDN (NOT an ad domain — "dash" = DASH format)
