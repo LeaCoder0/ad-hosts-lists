@@ -1,0 +1,36 @@
+# Instagram Ad & Tracking Block List
+# Format: standard hosts file (0.0.0.0 domain)
+# Last updated: 2026-03-23
+#
+# Sources:
+#   - Live DNS log analysis (AdAway DNS request export)
+#   - NetSeer (ad-tech company acquired by Facebook) IP association tracker
+#
+# Usage:
+#   AdAway → Hosts Sources → Add → paste the raw URL of this file
+#   OR manually add each domain to your block list
+#
+# NOTE: Instagram serves ads through the same API endpoints as organic content.
+#       DNS blocking cannot remove in-feed/story ads — only trackers can be blocked.
+#       Domains marked [SKIP] are known to break the app if blocked.
+# ────────────────────────────────────────────────────────────────────────────
+
+# Ad Targeting & IP Association (NetSeer / Facebook)
+# NetSeer was an ad-tech company acquired by Facebook.
+# These domains associate device IP addresses with user identifiers for ad targeting.
+# NOTE: The GUID prefix (cbb3880e-...) may change per device/session.
+#       Update these entries from your own AdAway DNS log export if they stop matching.
+0.0.0.0 cbb3880e-3bf5-4ee5-8817-ca6ca2129c67-netseer-ipaddr-assoc.xy.fbcdn.net
+0.0.0.0 cbb3880e-3bf5-4ee5-8817-ca6ca2129c67-netseer-ipaddr-assoc.xz.fbcdn.net
+
+# ── DO NOT BLOCK (breaks the app) ───────────────────────────────────────────
+# [SKIP] graph.instagram.com              — core API (feed, stories, reels)
+# [SKIP] i.instagram.com                  — core API (login, profile, media)
+# [SKIP] instagram.fsxv2-1.fna.fbcdn.net  — profile pictures, story thumbnails
+# [SKIP] scontent.fsxv2-1.fna.fbcdn.net   — feed images and videos
+# [SKIP] graph.facebook.com               — shared Facebook/Instagram API
+# [SKIP] lookaside.facebook.com           — image CDN
+# [SKIP] z-p42-chat-e2ee-ig.facebook.com  — Instagram E2E encrypted DMs
+# [SKIP] z-m-gateway.facebook.com         — mobile gateway
+# [SKIP] media2.giphy.com                 — GIFs in DMs
+# [SKIP] media4.giphy.com                 — GIFs in DMs
